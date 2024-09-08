@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaypee Cabahit - Resume</title>
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Jaypee Cabahit</h1>
+</header>
+
+<nav>
+    <a href="#about">About Me</a>
+    <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="container">
+    <!-- Profile Picture Section -->
+    <div class="profile-pic">
+        <img src="images/pfpimage.jpg" alt="Profile Picture" id="profileImage">
+    </div>
+
+    <section id="about">
+        <h2>About Me 
+            <button class="back-to-top" onclick="scrollToTop()">Back to Top</button>
+        </h2>
+        <p style="text-align: justify;">
+            Hello! I'm <b>Jaypee Cabahit</b>, a <b>first-year IT student</b> studying <b>web development</b> and <b>C programming</b>.<br>
+             I love building <b>digital solutions</b> that solve real problems.<br>
+              I'm always learning new things in the <b>tech industry</b>, from coding to the latest technology.<br>
+               I enjoy working on projects that let me think creatively and improve my skills. <br>
+               <b>Teamwork and problem-solving</b> are very important to me, and I’m excited to be part of projects that make a difference.<br>
+                I'm eager to keep learning and growing in my career.
+        </p>
+    </section>          
+
+    <section id="skills">
+        <h2>Skills 
+            <button class="back-to-top" onclick="scrollToTop()">Back to Top</button>
+        </h2>
+        <ul>
+            <li>Web Development (HTML, CSS, JavaScript)</li>
+            <li>Basic knowledge of C Programming, Lua (U), Java, TypeScript, and Python</li>
+            <li>Problem Solving</li>
+            <li>Team Collaboration</li>
+        </ul>        
+    </section>    
+
+    <section id="education">
+        <h2>Educational Background 
+            <button class="back-to-top" onclick="scrollToTop()">Back to Top</button>
+        </h2>
+        <p><strong>IT Program, First Year</strong><br> Currently enrolled in IT course in University of Cebu Main Campus focusing on web development, C programming, and problem-solving skills.</p>
+        <p><strong>Senior High Graduate</strong><br> University of Cebu Pri (2022-2023)</p>
+        <p><strong>Junior High Graduate</strong><br> City Central National Highschool (2020-2021)</p>
+        <p><strong>Elementary Graduate</strong><br> Nazarene Christian Learning Center (2016-2017)</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact 
+            <button class="back-to-top" onclick="scrollToTop()">Back to Top</button>
+        </h2>
+        <p>Email: cabahitjaypee1@gmail.com</p>
+        <p>Phone: (+63) 9612 516 826</p>
+        <p>Address: Banawa, Cebu City</p>
+        <a href="mailto:cabahitjaypee1@gmail.com" class="contact-button">Contact Me</a>
+    </section>
+</div>
+
+<!-- Footer Section -->
+<footer>
+    <p>&copy; 2024 Jaypee Cabahit. All rights reserved.</p>
+    
+    <!-- Social Media Icons -->
+    <div class="social-icons">
+        <a href="https://www.facebook.com/cabahitjaypee/" target="_blank">
+            <img src="images/facebook.png" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com/cabahitjp/" target="_blank">
+            <img src="images/instagram.png" alt="Instagram">
+        </a>
+        <a href="https://x.com/EXEWiseRBLX" target="_blank">
+            <img src="images/twitter.png" alt="Twitter">
+        </a>
+        <a href="https://github.com/DPOAdmin" target="_blank">
+            <img src="images/github.png" alt="Github">
+        </a>        
+    </div>
+</footer>
+
+<!-- JavaScript for smooth scrolling and Back to Top -->
+<script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+</script>
+
+</body>
+</html>
